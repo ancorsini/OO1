@@ -65,6 +65,7 @@
       <historyCheckPointStep>true</historyCheckPointStep>
       <scriptResultStep>false</scriptResultStep>
       <userPrompt></userPrompt>
+      <stepRerun>rerun</stepRerun>
       <bindings>
         <userInputBinding id="2987f22f-d952-4a50-bc90-488fa2ebcdf0">
           <annotation></annotation>
