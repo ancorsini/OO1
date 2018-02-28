@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<flow id="3ce6a613-3cdd-4278-9f89-91cff4bd2a6a">
-  <descriptionCdata><![CDATA[3ce6a613-3cdd-4278-9f89-91cff4bd2a6a.15963b92-da5e-4460-8d44-33f8287c51ce.description=<pre>\nCompares two strings, returning a true response if and only if they contain the same sequence of characters. A null string is considered to be equal to an empty string.\n\nInputs\:\n    string1 - The first string. \nDefault value\: "" (empty)\n    string2 - The second string.\nDefault value\: "" (empty)\n    ignoreCase - If set to 'true', then the comparison ignores case considerations. The two strings are considered equal ignoring case if they are of the same length and corresponding characters in the two strings are equal ignoring case. If set to any value other than 'true', then the strings must match exactly to be considered equal.\n\nResponses\:\n    true - If the two strings are equal.\n    false - If the two strings are not equal.\n\n</pre>
-3ce6a613-3cdd-4278-9f89-91cff4bd2a6a.16488f1b-edb1-4717-ba24-d33840c092cb.prompt=Ignore Case
-3ce6a613-3cdd-4278-9f89-91cff4bd2a6a.ac9f7a04-55dc-46a4-957b-f7875d2a412c.callout=esegue una query su ChangeLog Oracle Db per estrarre la change ID passata via REST
+<flow id="0dd7a01b-2005-42a3-b05f-3063078f4e80">
+  <descriptionCdata><![CDATA[0dd7a01b-2005-42a3-b05f-3063078f4e80.3bdc7d09-8098-454a-952e-7ccbe7e97827.callout=esegue una query su ChangeLog Oracle Db per estrarre la change ID passata via REST
+0dd7a01b-2005-42a3-b05f-3063078f4e80.442acee0-5a9e-43ce-8def-8a6331d06b1a.description=<pre>\nCompares two strings, returning a true response if and only if they contain the same sequence of characters. A null string is considered to be equal to an empty string.\n\nInputs\:\n    string1 - The first string. \nDefault value\: "" (empty)\n    string2 - The second string.\nDefault value\: "" (empty)\n    ignoreCase - If set to 'true', then the comparison ignores case considerations. The two strings are considered equal ignoring case if they are of the same length and corresponding characters in the two strings are equal ignoring case. If set to any value other than 'true', then the strings must match exactly to be considered equal.\n\nResponses\:\n    true - If the two strings are equal.\n    false - If the two strings are not equal.\n\n</pre>
+0dd7a01b-2005-42a3-b05f-3063078f4e80.9d2ada8e-d031-404b-89fb-83e3d7e845ba.prompt=Ignore Case
 ]]></descriptionCdata>
   <annotation></annotation>
   <name>0.0 Change Log Db Monitor</name>
   <categories/>
   <inputs/>
   <possibleResponses>
-    <opResponse id="3a2906c2-8ea0-445c-a1c8-2ecad3fb069a">
+    <opResponse id="dd6febfb-737f-4031-a6ed-e58940e6cffc">
       <annotation></annotation>
       <name>failure</name>
       <isDefault>false</isDefault>
@@ -17,7 +17,7 @@
       <type>ERROR</type>
       <matchRules/>
     </opResponse>
-    <opResponse id="52e1d807-748f-4ca8-b17c-7db3c9ddbf6c">
+    <opResponse id="306cce05-b3f8-4c3d-a8a8-b4a37ca89c28">
       <annotation></annotation>
       <name>unknown</name>
       <isDefault>false</isDefault>
@@ -25,32 +25,24 @@
       <type>NO_ACTION_TAKEN</type>
       <matchRules/>
     </opResponse>
-    <opResponse id="11fe6e43-9b29-40e1-b0c5-3fb2500b6ffe">
-      <annotation></annotation>
-      <name>success</name>
-      <isDefault>true</isDefault>
-      <onFailure>false</onFailure>
-      <type>RESOLVED</type>
-      <matchRules/>
-    </opResponse>
   </possibleResponses>
   <availableResultExpressions/>
-  <resultExpression id="63c0f647-9fcf-44f8-8cc8-c5e6d4c0b44a">
+  <resultExpression id="81b49b0a-93bd-4ae4-a6c8-80e6e1463f23">
     <annotation></annotation>
     <name>FailureMessage</name>
     <fieldName>FailureMessage</fieldName>
     <sourceType>RAWRESULT</sourceType>
     <filters/>
   </resultExpression>
-  <iconSpec id="93331547-d2f8-4bd9-8b97-d3aada427683">
+  <iconSpec id="c89ed02c-0c4e-41a2-a032-c3b75174d71f">
     <baseIcon>flow.png</baseIcon>
     <basePath>System</basePath>
     <readOnly>false</readOnly>
     <layers/>
   </iconSpec>
   <callouts>
-    <callout id="ac9f7a04-55dc-46a4-957b-f7875d2a412c">
-      <text>3ce6a613-3cdd-4278-9f89-91cff4bd2a6a.ac9f7a04-55dc-46a4-957b-f7875d2a412c.callout</text>
+    <callout id="3bdc7d09-8098-454a-952e-7ccbe7e97827">
+      <text>0dd7a01b-2005-42a3-b05f-3063078f4e80.3bdc7d09-8098-454a-952e-7ccbe7e97827.callout</text>
       <bounds>
         <x>270.0</x>
         <y>120.0</y>
@@ -59,7 +51,7 @@
       </bounds>
       <layer>-1</layer>
       <step>
-        <refId>c69dca39-d234-4771-aee8-a4900e72bd5f</refId>
+        <refId>48af1f3c-b28b-4a01-a373-d232f4bdaadc</refId>
       </step>
     </callout>
   </callouts>
@@ -67,7 +59,7 @@
   <compatibleRuntimeContext>false</compatibleRuntimeContext>
   <historyCheckPointFlow>true</historyCheckPointFlow>
   <steps>
-    <step id="c69dca39-d234-4771-aee8-a4900e72bd5f">
+    <step id="48af1f3c-b28b-4a01-a373-d232f4bdaadc">
       <annotation></annotation>
       <name>ChangeLogDbScan</name>
       <bounds>
@@ -90,7 +82,7 @@
       <userPrompt></userPrompt>
       <bindings/>
       <transitions>
-        <transition id="07464d81-ba9f-47eb-a820-2073bdbdccd7">
+        <transition id="cee62469-3b52-4e70-b725-e5002420a09a">
           <annotation></annotation>
           <name>start selected change evaluation</name>
           <command>NEXT</command>
@@ -99,10 +91,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>15963b92-da5e-4460-8d44-33f8287c51ce</refId>
+            <refId>442acee0-5a9e-43ce-8def-8a6331d06b1a</refId>
           </destination>
           <source>
-            <refId>c69dca39-d234-4771-aee8-a4900e72bd5f</refId>
+            <refId>48af1f3c-b28b-4a01-a373-d232f4bdaadc</refId>
           </source>
           <positions>
             <point>
@@ -119,7 +111,7 @@
             <y>0.0</y>
           </labelPosition>
         </transition>
-        <transition id="46aede74-08d1-43e5-ad2d-0805291c4be5">
+        <transition id="6a2bfcb6-ab90-47f7-8f69-26ca37d225ae">
           <annotation></annotation>
           <name>failure</name>
           <command>NEXT</command>
@@ -128,10 +120,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>ecf753b2-b716-4228-8d57-515076ee35c1</refId>
+            <refId>0d261859-500e-44ed-8276-f25bc32f86ea</refId>
           </destination>
           <source>
-            <refId>c69dca39-d234-4771-aee8-a4900e72bd5f</refId>
+            <refId>48af1f3c-b28b-4a01-a373-d232f4bdaadc</refId>
           </source>
           <positions>
             <point>
@@ -148,7 +140,7 @@
             <y>0.0</y>
           </labelPosition>
         </transition>
-        <transition id="a8091b5f-5ebb-4131-86de-2f19fd8e621c">
+        <transition id="c3f4af65-5537-49d0-821f-5513a7af93a2">
           <annotation></annotation>
           <name>no change to process</name>
           <command>NEXT</command>
@@ -157,10 +149,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>068cd7ef-9bd5-43e8-8c0f-aef2a6b25457</refId>
+            <refId>94bbb375-0d5f-4bea-8022-6b016a79566d</refId>
           </destination>
           <source>
-            <refId>c69dca39-d234-4771-aee8-a4900e72bd5f</refId>
+            <refId>48af1f3c-b28b-4a01-a373-d232f4bdaadc</refId>
           </source>
           <positions>
             <point>
@@ -185,8 +177,8 @@
       <assignments/>
       <throttleSize>0</throttleSize>
     </step>
-    <step id="15963b92-da5e-4460-8d44-33f8287c51ce">
-      <annotation>3ce6a613-3cdd-4278-9f89-91cff4bd2a6a.15963b92-da5e-4460-8d44-33f8287c51ce.description</annotation>
+    <step id="442acee0-5a9e-43ce-8def-8a6331d06b1a">
+      <annotation>0dd7a01b-2005-42a3-b05f-3063078f4e80.442acee0-5a9e-43ce-8def-8a6331d06b1a.description</annotation>
       <name>Auto Approve?</name>
       <bounds>
         <x>450.0</x>
@@ -207,7 +199,7 @@
       <scriptResultStep>false</scriptResultStep>
       <userPrompt></userPrompt>
       <bindings>
-        <staticBinding id="3d377e7a-5148-4377-b05d-470dc0addc1d">
+        <staticBinding id="2ec682c3-2e4b-43df-b6e2-f1d3d052cc1f">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
           <assignToContext>false</assignToContext>
@@ -219,7 +211,7 @@
           <listDelimiter>,</listDelimiter>
           <record>false</record>
         </staticBinding>
-        <staticBinding id="0e097d39-e1bc-4e24-a8ea-f553bf525d71">
+        <staticBinding id="3ffaede3-d017-439d-a32a-7237594e4ad0">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
           <assignToContext>false</assignToContext>
@@ -231,7 +223,7 @@
           <listDelimiter>,</listDelimiter>
           <record>false</record>
         </staticBinding>
-        <userInputBinding id="16488f1b-edb1-4717-ba24-d33840c092cb">
+        <userInputBinding id="9d2ada8e-d031-404b-89fb-83e3d7e845ba">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
           <assignToContext>false</assignToContext>
@@ -242,7 +234,7 @@
           <inputSymbol>ignoreCase</inputSymbol>
           <listDelimiter>,</listDelimiter>
           <record>false</record>
-          <prompt>3ce6a613-3cdd-4278-9f89-91cff4bd2a6a.16488f1b-edb1-4717-ba24-d33840c092cb.prompt</prompt>
+          <prompt>0dd7a01b-2005-42a3-b05f-3063078f4e80.9d2ada8e-d031-404b-89fb-83e3d7e845ba.prompt</prompt>
           <isMultiSelect>false</isMultiSelect>
           <link>
             <refId>96a1ed25-cdc9-4ff6-8fba-e9c044c5ca53</refId>
@@ -252,7 +244,7 @@
         </userInputBinding>
       </bindings>
       <transitions>
-        <transition id="dc9f32ed-2c88-427a-9198-ba31a61496a4">
+        <transition id="2d26e541-54ca-4459-b8c9-08dee994ac6e">
           <annotation></annotation>
           <name>false</name>
           <command>NEXT</command>
@@ -261,10 +253,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>4dfb371c-b7aa-4ab7-bca0-1db1a82ee2e5</refId>
+            <refId>5d9c6e87-b367-4e81-bc74-03ca8c2018fb</refId>
           </destination>
           <source>
-            <refId>15963b92-da5e-4460-8d44-33f8287c51ce</refId>
+            <refId>442acee0-5a9e-43ce-8def-8a6331d06b1a</refId>
           </source>
           <positions>
             <point>
@@ -281,7 +273,7 @@
             <y>0.0</y>
           </labelPosition>
         </transition>
-        <transition id="7ca5e64d-d589-4a61-afed-303418577515">
+        <transition id="4e827774-e160-43cf-b1af-f7e62cd8f1c2">
           <annotation></annotation>
           <name>true</name>
           <command>NEXT</command>
@@ -290,10 +282,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>c9d52f85-3e43-4df6-829b-478e79cf85e0</refId>
+            <refId>706c4c6d-a6b8-4d6c-ac90-772c237d481e</refId>
           </destination>
           <source>
-            <refId>15963b92-da5e-4460-8d44-33f8287c51ce</refId>
+            <refId>442acee0-5a9e-43ce-8def-8a6331d06b1a</refId>
           </source>
           <positions>
             <point>
@@ -318,7 +310,7 @@
       <assignments/>
       <throttleSize>0</throttleSize>
     </step>
-    <returnStep id="ecf753b2-b716-4228-8d57-515076ee35c1">
+    <returnStep id="0d261859-500e-44ed-8276-f25bc32f86ea">
       <annotation></annotation>
       <name>Error : failure</name>
       <bounds>
@@ -341,7 +333,7 @@
       <userPrompt></userPrompt>
       <bindings/>
       <transitions>
-        <transition id="e522e545-f2e6-4a39-a923-9da9fadbe1a6">
+        <transition id="bd92bc46-b302-4f86-bc40-401fae7bafff">
           <annotation></annotation>
           <name>return</name>
           <command>NEXT</command>
@@ -350,10 +342,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>ecf753b2-b716-4228-8d57-515076ee35c1</refId>
+            <refId>0d261859-500e-44ed-8276-f25bc32f86ea</refId>
           </destination>
           <source>
-            <refId>ecf753b2-b716-4228-8d57-515076ee35c1</refId>
+            <refId>0d261859-500e-44ed-8276-f25bc32f86ea</refId>
           </source>
           <positions/>
         </transition>
@@ -362,7 +354,7 @@
       <returnStepType>ERROR</returnStepType>
       <assignments/>
     </returnStep>
-    <returnStep id="068cd7ef-9bd5-43e8-8c0f-aef2a6b25457">
+    <returnStep id="94bbb375-0d5f-4bea-8022-6b016a79566d">
       <annotation></annotation>
       <name>No Action Taken : unknown</name>
       <bounds>
@@ -385,7 +377,7 @@
       <userPrompt></userPrompt>
       <bindings/>
       <transitions>
-        <transition id="944e5459-d941-4606-b195-ea63cf1304e0">
+        <transition id="a350d889-2920-40cd-924a-a0b41d753b00">
           <annotation></annotation>
           <name>return</name>
           <command>NEXT</command>
@@ -394,10 +386,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>068cd7ef-9bd5-43e8-8c0f-aef2a6b25457</refId>
+            <refId>94bbb375-0d5f-4bea-8022-6b016a79566d</refId>
           </destination>
           <source>
-            <refId>068cd7ef-9bd5-43e8-8c0f-aef2a6b25457</refId>
+            <refId>94bbb375-0d5f-4bea-8022-6b016a79566d</refId>
           </source>
           <positions/>
         </transition>
@@ -406,7 +398,7 @@
       <returnStepType>NO_ACTION_TAKEN</returnStepType>
       <assignments/>
     </returnStep>
-    <step id="4dfb371c-b7aa-4ab7-bca0-1db1a82ee2e5">
+    <step id="5d9c6e87-b367-4e81-bc74-03ca8c2018fb">
       <annotation></annotation>
       <name>0.4 Check Approval Process Complete</name>
       <bounds>
@@ -429,19 +421,19 @@
       <userPrompt></userPrompt>
       <bindings/>
       <transitions>
-        <transition id="1957bed7-24aa-4845-bc32-92518022d752">
+        <transition id="66aa7a44-9484-45d1-8589-a53f82b988c5">
           <annotation></annotation>
-          <name>success</name>
+          <name>true</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
           <responseSymbol>success</responseSymbol>
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>c9d52f85-3e43-4df6-829b-478e79cf85e0</refId>
+            <refId>706c4c6d-a6b8-4d6c-ac90-772c237d481e</refId>
           </destination>
           <source>
-            <refId>4dfb371c-b7aa-4ab7-bca0-1db1a82ee2e5</refId>
+            <refId>5d9c6e87-b367-4e81-bc74-03ca8c2018fb</refId>
           </source>
           <positions>
             <point>
@@ -458,19 +450,19 @@
             <y>0.0</y>
           </labelPosition>
         </transition>
-        <transition id="a180466c-3db5-40e1-9816-6a3a704c6fad">
+        <transition id="95d8ae70-cd1a-47db-8d2a-29906b754bd3">
           <annotation></annotation>
-          <name>no action</name>
+          <name>false</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
           <responseSymbol>failure</responseSymbol>
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>3e4d09e4-2cef-4b2d-9d38-8ba8ba88d27d</refId>
+            <refId>dd7531fd-4a98-4562-8ccb-f79d71c46933</refId>
           </destination>
           <source>
-            <refId>4dfb371c-b7aa-4ab7-bca0-1db1a82ee2e5</refId>
+            <refId>5d9c6e87-b367-4e81-bc74-03ca8c2018fb</refId>
           </source>
           <positions>
             <point>
@@ -495,11 +487,11 @@
       <assignments/>
       <throttleSize>0</throttleSize>
     </step>
-    <step id="ad6f7661-be18-4fa8-b8d9-d83cf4a6a7b3">
+    <step id="c37fef9f-aabd-4d5c-a58b-f7e898069c2b">
       <annotation></annotation>
       <name>0.5 Take Action</name>
       <bounds>
-        <x>660.0</x>
+        <x>447.0</x>
         <y>570.0</y>
       </bounds>
       <layer>-1</layer>
@@ -518,7 +510,7 @@
       <userPrompt></userPrompt>
       <bindings/>
       <transitions>
-        <transition id="f2062a13-02db-4df4-a9b8-abdd822a3508">
+        <transition id="1585db5e-fd96-42bc-9be2-3c5be618a2f3">
           <annotation></annotation>
           <name>failure</name>
           <command>NEXT</command>
@@ -527,10 +519,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>ecf753b2-b716-4228-8d57-515076ee35c1</refId>
+            <refId>0d261859-500e-44ed-8276-f25bc32f86ea</refId>
           </destination>
           <source>
-            <refId>ad6f7661-be18-4fa8-b8d9-d83cf4a6a7b3</refId>
+            <refId>c37fef9f-aabd-4d5c-a58b-f7e898069c2b</refId>
           </source>
           <positions>
             <point>
@@ -547,28 +539,28 @@
             <y>0.0</y>
           </labelPosition>
         </transition>
-        <transition id="f5cca5ae-5d2d-4fd2-aa93-650cc4babee4">
+        <transition id="a366bfbf-69cc-484f-8c32-1c431a764bf8">
           <annotation></annotation>
-          <name>check next change request</name>
+          <name>success</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
           <responseSymbol>success</responseSymbol>
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>b0015959-7511-4f0f-a248-daae1fc39048</refId>
+            <refId>48af1f3c-b28b-4a01-a373-d232f4bdaadc</refId>
           </destination>
           <source>
-            <refId>ad6f7661-be18-4fa8-b8d9-d83cf4a6a7b3</refId>
+            <refId>c37fef9f-aabd-4d5c-a58b-f7e898069c2b</refId>
           </source>
           <positions>
             <point>
-              <x>350.0</x>
-              <y>454.0</y>
+              <x>710.0</x>
+              <y>604.0</y>
             </point>
             <point>
-              <x>860.0</x>
-              <y>574.0</y>
+              <x>80.0</x>
+              <y>34.0</y>
             </point>
           </positions>
           <labelPosition>
@@ -584,7 +576,7 @@
       <assignments/>
       <throttleSize>0</throttleSize>
     </step>
-    <step id="c9d52f85-3e43-4df6-829b-478e79cf85e0">
+    <step id="706c4c6d-a6b8-4d6c-ac90-772c237d481e">
       <annotation></annotation>
       <name>0.2 Check Delivery Date</name>
       <bounds>
@@ -607,7 +599,7 @@
       <userPrompt></userPrompt>
       <bindings/>
       <transitions>
-        <transition id="4b78b41e-f3f8-4b8f-ad2c-6db78934448c">
+        <transition id="a22f813f-dc40-428b-b42c-1b1efc869ac7">
           <annotation></annotation>
           <name>success</name>
           <command>NEXT</command>
@@ -616,10 +608,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>ad6f7661-be18-4fa8-b8d9-d83cf4a6a7b3</refId>
+            <refId>c37fef9f-aabd-4d5c-a58b-f7e898069c2b</refId>
           </destination>
           <source>
-            <refId>c9d52f85-3e43-4df6-829b-478e79cf85e0</refId>
+            <refId>706c4c6d-a6b8-4d6c-ac90-772c237d481e</refId>
           </source>
           <positions>
             <point>
@@ -636,7 +628,7 @@
             <y>0.0</y>
           </labelPosition>
         </transition>
-        <transition id="ed1daaac-352a-4fd1-8171-e7a735aa2063">
+        <transition id="9a4f76e9-3628-4e91-a2d2-61e69ad2794c">
           <annotation></annotation>
           <name>no action</name>
           <command>NEXT</command>
@@ -645,10 +637,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>3e4d09e4-2cef-4b2d-9d38-8ba8ba88d27d</refId>
+            <refId>dd7531fd-4a98-4562-8ccb-f79d71c46933</refId>
           </destination>
           <source>
-            <refId>c9d52f85-3e43-4df6-829b-478e79cf85e0</refId>
+            <refId>706c4c6d-a6b8-4d6c-ac90-772c237d481e</refId>
           </source>
           <positions>
             <point>
@@ -673,51 +665,7 @@
       <assignments/>
       <throttleSize>0</throttleSize>
     </step>
-    <returnStep id="b0015959-7511-4f0f-a248-daae1fc39048">
-      <annotation></annotation>
-      <name>Resolved : success</name>
-      <bounds>
-        <x>810.0</x>
-        <y>690.0</y>
-      </bounds>
-      <layer>-1</layer>
-      <hideInbound>false</hideInbound>
-      <addResultToRunContext>false</addResultToRunContext>
-      <isCriticalStep>false</isCriticalStep>
-      <isNonBlocking>false</isNonBlocking>
-      <isParallelStep>false</isParallelStep>
-      <isSingleResponse>false</isSingleResponse>
-      <recordInHistory>false</recordInHistory>
-      <recordRawOutput>true</recordRawOutput>
-      <recordPrimaryOutput>true</recordPrimaryOutput>
-      <checkPointStep>true</checkPointStep>
-      <historyCheckPointStep>true</historyCheckPointStep>
-      <scriptResultStep>false</scriptResultStep>
-      <userPrompt></userPrompt>
-      <bindings/>
-      <transitions>
-        <transition id="e14af885-d745-4830-b043-35dc157f12b7">
-          <annotation></annotation>
-          <name>return</name>
-          <command>NEXT</command>
-          <linkMode>false</linkMode>
-          <responseSymbol>success</responseSymbol>
-          <shouldHandoff>false</shouldHandoff>
-          <transitionValue>0.0</transitionValue>
-          <destination>
-            <refId>b0015959-7511-4f0f-a248-daae1fc39048</refId>
-          </destination>
-          <source>
-            <refId>b0015959-7511-4f0f-a248-daae1fc39048</refId>
-          </source>
-          <positions/>
-        </transition>
-      </transitions>
-      <properties/>
-      <returnStepType>RESOLVED</returnStepType>
-      <assignments/>
-    </returnStep>
-    <returnStep id="3e4d09e4-2cef-4b2d-9d38-8ba8ba88d27d">
+    <returnStep id="dd7531fd-4a98-4562-8ccb-f79d71c46933">
       <annotation></annotation>
       <name>No Action Taken : unknown</name>
       <bounds>
@@ -740,7 +688,7 @@
       <userPrompt></userPrompt>
       <bindings/>
       <transitions>
-        <transition id="6461f2be-6a0f-45dc-8e7e-71a763ecbd28">
+        <transition id="4369bb62-8c27-410e-abbe-aecb0b6bdbc1">
           <annotation></annotation>
           <name>return</name>
           <command>NEXT</command>
@@ -749,10 +697,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>3e4d09e4-2cef-4b2d-9d38-8ba8ba88d27d</refId>
+            <refId>dd7531fd-4a98-4562-8ccb-f79d71c46933</refId>
           </destination>
           <source>
-            <refId>3e4d09e4-2cef-4b2d-9d38-8ba8ba88d27d</refId>
+            <refId>dd7531fd-4a98-4562-8ccb-f79d71c46933</refId>
           </source>
           <positions/>
         </transition>
@@ -762,5 +710,5 @@
       <assignments/>
     </returnStep>
   </steps>
-  <startSteps>c69dca39-d234-4771-aee8-a4900e72bd5f</startSteps>
+  <startSteps>48af1f3c-b28b-4a01-a373-d232f4bdaadc</startSteps>
 </flow>
