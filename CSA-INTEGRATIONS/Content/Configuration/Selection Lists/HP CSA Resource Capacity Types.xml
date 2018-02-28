@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selectionList id="116d32ef-1e92-4552-aab9-096d433226f7">
+  <descriptionCdata><![CDATA[116d32ef-1e92-4552-aab9-096d433226f7.description=List of Resource Capacity supported in a Resource Pool in HP CSA
+]]></descriptionCdata>
+  <annotation>116d32ef-1e92-4552-aab9-096d433226f7.description</annotation>
+  <name>HP CSA Resource Capacity Types</name>
+  <storage>
+    <string>CPU</string>
+    <string>MEMORY</string>
+    <string>STORAGE</string>
+    <string>IPv4 Address</string>
+    <string>IPv6 Address</string>
+    <string>VLAN</string>
+    <string>SUBNET</string>
+    <string>LICENSE</string>
+    <string>PHYSICAL_SERVER</string>
+    <string>VIRTUAL_SERVER</string>
+    <string>POWER</string>
+  </storage>
+</selectionList>

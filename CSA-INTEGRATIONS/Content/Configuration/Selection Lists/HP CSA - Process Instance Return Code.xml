@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selectionList id="924c92e1-4eef-4aa0-9c23-9de3974bc681">
+  <descriptionCdata><![CDATA[924c92e1-4eef-4aa0-9c23-9de3974bc681.description=CSA Process Instance Return Code
+]]></descriptionCdata>
+  <annotation>924c92e1-4eef-4aa0-9c23-9de3974bc681.description</annotation>
+  <name>HP CSA - Process Instance Return Code</name>
+  <storage>
+    <string></string>
+    <string>SUCCESS</string>
+    <string>FAILURE</string>
+    <string>RUNNING</string>
+    <string>TIMEOUT</string>
+  </storage>
+</selectionList>

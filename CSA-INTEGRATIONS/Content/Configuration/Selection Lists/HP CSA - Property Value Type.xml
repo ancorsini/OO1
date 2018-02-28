@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selectionList id="fed956fd-6e4e-4759-bf8f-0ccd5c3dcaad">
+  <descriptionCdata><![CDATA[fed956fd-6e4e-4759-bf8f-0ccd5c3dcaad.description=Supported Value Types for CSA Artifact's Property
+]]></descriptionCdata>
+  <annotation>fed956fd-6e4e-4759-bf8f-0ccd5c3dcaad.description</annotation>
+  <name>HP CSA - Property Value Type</name>
+  <storage>
+    <string></string>
+    <string>STRING</string>
+    <string>INTEGER</string>
+    <string>BOOLEAN</string>
+  </storage>
+</selectionList>

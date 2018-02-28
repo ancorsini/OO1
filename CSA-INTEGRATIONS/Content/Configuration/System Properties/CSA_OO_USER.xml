@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<systemProperty id="dc888b4f-a389-4652-aaf7-6e7a65c090a9">
+  <descriptionCdata><![CDATA[dc888b4f-a389-4652-aaf7-6e7a65c090a9.description=CSA 3.X OO User to get the user identifier id, which is required to communicate to CSA using REST API
+]]></descriptionCdata>
+  <annotation>dc888b4f-a389-4652-aaf7-6e7a65c090a9.description</annotation>
+  <name>CSA_OO_USER</name>
+  <value>{OBFUSCATED}E5HMtRJI18PZTsvzPQ+rsg==</value>
+</systemProperty>

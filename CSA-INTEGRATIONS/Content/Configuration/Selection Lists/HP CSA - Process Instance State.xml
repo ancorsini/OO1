@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selectionList id="d75669b9-fe62-4b86-89fa-06aa7c209a8c">
+  <descriptionCdata><![CDATA[d75669b9-fe62-4b86-89fa-06aa7c209a8c.description=CSA Process Instance State
+]]></descriptionCdata>
+  <annotation>d75669b9-fe62-4b86-89fa-06aa7c209a8c.description</annotation>
+  <name>HP CSA - Process Instance State</name>
+  <storage>
+    <string>COMPLETED</string>
+    <string>INITIALIZED</string>
+    <string>PENDING</string>
+    <string>READY</string>
+    <string>ACTIVE</string>
+    <string>CANCELED</string>
+    <string>ERROR</string>
+  </storage>
+</selectionList>
