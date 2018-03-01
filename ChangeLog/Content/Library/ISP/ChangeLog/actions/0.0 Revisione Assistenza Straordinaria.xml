@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <flow id="0dd7a01b-2005-42a3-b05f-3063078f4e80">
-  <descriptionCdata><![CDATA[0dd7a01b-2005-42a3-b05f-3063078f4e80.3bdc7d09-8098-454a-952e-7ccbe7e97827.callout=esegue una query su ChangeLog Oracle Db per estrarre la change ID passata via REST
+  <descriptionCdata><![CDATA[0dd7a01b-2005-42a3-b05f-3063078f4e80.3bdc7d09-8098-454a-952e-7ccbe7e97827.callout=esegue una query su ChangeLog Oracle Db per estrarre le change ID da elaborare
 0dd7a01b-2005-42a3-b05f-3063078f4e80.442acee0-5a9e-43ce-8def-8a6331d06b1a.description=<pre>\nCompares two strings, returning a true response if and only if they contain the same sequence of characters. A null string is considered to be equal to an empty string.\n\nInputs\:\n    string1 - The first string. \nDefault value\: "" (empty)\n    string2 - The second string.\nDefault value\: "" (empty)\n    ignoreCase - If set to 'true', then the comparison ignores case considerations. The two strings are considered equal ignoring case if they are of the same length and corresponding characters in the two strings are equal ignoring case. If set to any value other than 'true', then the strings must match exactly to be considered equal.\n\nResponses\:\n    true - If the two strings are equal.\n    false - If the two strings are not equal.\n\n</pre>
 0dd7a01b-2005-42a3-b05f-3063078f4e80.9d2ada8e-d031-404b-89fb-83e3d7e845ba.prompt=Ignore Case
 ]]></descriptionCdata>
   <annotation></annotation>
-  <name>0.0 Change Log Db Monitor</name>
+  <name>0.0 Revisione Assistenza Straordinaria</name>
   <categories/>
   <inputs/>
   <possibleResponses>
@@ -44,8 +44,8 @@
     <callout id="3bdc7d09-8098-454a-952e-7ccbe7e97827">
       <text>0dd7a01b-2005-42a3-b05f-3063078f4e80.3bdc7d09-8098-454a-952e-7ccbe7e97827.callout</text>
       <bounds>
-        <x>270.0</x>
-        <y>120.0</y>
+        <x>12.0</x>
+        <y>7.0</y>
         <width>200.0</width>
         <height>100.0</height>
       </bounds>
@@ -61,10 +61,10 @@
   <steps>
     <step id="48af1f3c-b28b-4a01-a373-d232f4bdaadc">
       <annotation></annotation>
-      <name>ChangeLogDbScan</name>
+      <name>Query Changelog Oracle Db</name>
       <bounds>
         <x>30.0</x>
-        <y>0.0</y>
+        <y>180.0</y>
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
@@ -84,7 +84,7 @@
       <transitions>
         <transition id="cee62469-3b52-4e70-b725-e5002420a09a">
           <annotation></annotation>
-          <name>start selected change evaluation</name>
+          <name>valuto la change selezionata</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
           <responseSymbol>success</responseSymbol>
@@ -179,10 +179,10 @@
     </step>
     <step id="442acee0-5a9e-43ce-8def-8a6331d06b1a">
       <annotation>0dd7a01b-2005-42a3-b05f-3063078f4e80.442acee0-5a9e-43ce-8def-8a6331d06b1a.description</annotation>
-      <name>Auto Approve?</name>
+      <name>Auto Approvazione?</name>
       <bounds>
-        <x>450.0</x>
-        <y>0.0</y>
+        <x>361.0</x>
+        <y>175.0</y>
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
@@ -246,7 +246,7 @@
       <transitions>
         <transition id="2d26e541-54ca-4459-b8c9-08dee994ac6e">
           <annotation></annotation>
-          <name>false</name>
+          <name>NO</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
           <responseSymbol>false</responseSymbol>
@@ -275,7 +275,7 @@
         </transition>
         <transition id="4e827774-e160-43cf-b1af-f7e62cd8f1c2">
           <annotation></annotation>
-          <name>true</name>
+          <name>SI</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
           <responseSymbol>true</responseSymbol>
@@ -314,8 +314,8 @@
       <annotation></annotation>
       <name>Error : failure</name>
       <bounds>
-        <x>270.0</x>
-        <y>570.0</y>
+        <x>150.0</x>
+        <y>390.0</y>
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
@@ -358,8 +358,8 @@
       <annotation></annotation>
       <name>No Action Taken : unknown</name>
       <bounds>
-        <x>30.0</x>
-        <y>570.0</y>
+        <x>33.0</x>
+        <y>390.0</y>
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
@@ -400,9 +400,9 @@
     </returnStep>
     <step id="5d9c6e87-b367-4e81-bc74-03ca8c2018fb">
       <annotation></annotation>
-      <name>0.4 Check Approval Process Complete</name>
+      <name>0.3 Processo di Approvazione</name>
       <bounds>
-        <x>630.0</x>
+        <x>633.0</x>
         <y>0.0</y>
       </bounds>
       <layer>-1</layer>
@@ -423,7 +423,7 @@
       <transitions>
         <transition id="66aa7a44-9484-45d1-8589-a53f82b988c5">
           <annotation></annotation>
-          <name>true</name>
+          <name>approvazione completa</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
           <responseSymbol>success</responseSymbol>
@@ -446,32 +446,32 @@
             </point>
           </positions>
           <labelPosition>
-            <x>333.0</x>
-            <y>0.0</y>
+            <x>715.4200255538279</x>
+            <y>6.6031253207532625</y>
           </labelPosition>
         </transition>
-        <transition id="95d8ae70-cd1a-47db-8d2a-29906b754bd3">
+        <transition id="92d3b964-8db8-4d94-94df-6ad4a29197ce">
           <annotation></annotation>
-          <name>false</name>
+          <name>failure</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
           <responseSymbol>failure</responseSymbol>
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>dd7531fd-4a98-4562-8ccb-f79d71c46933</refId>
+            <refId>0cea21f8-33fd-4043-8c0c-bd5ec8c88b63</refId>
           </destination>
           <source>
             <refId>5d9c6e87-b367-4e81-bc74-03ca8c2018fb</refId>
           </source>
           <positions>
             <point>
-              <x>350.0</x>
-              <y>94.0</y>
+              <x>683.0</x>
+              <y>34.0</y>
             </point>
             <point>
-              <x>710.0</x>
-              <y>364.0</y>
+              <x>350.0</x>
+              <y>34.0</y>
             </point>
           </positions>
           <labelPosition>
@@ -489,10 +489,10 @@
     </step>
     <step id="c37fef9f-aabd-4d5c-a58b-f7e898069c2b">
       <annotation></annotation>
-      <name>0.5 Take Action</name>
+      <name>0.5 Azioni</name>
       <bounds>
-        <x>447.0</x>
-        <y>570.0</y>
+        <x>450.0</x>
+        <y>390.0</y>
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
@@ -541,7 +541,7 @@
         </transition>
         <transition id="a366bfbf-69cc-484f-8c32-1c431a764bf8">
           <annotation></annotation>
-          <name>success</name>
+          <name>passo alla prossima change selezionata</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
           <responseSymbol>success</responseSymbol>
@@ -578,10 +578,10 @@
     </step>
     <step id="706c4c6d-a6b8-4d6c-ac90-772c237d481e">
       <annotation></annotation>
-      <name>0.2 Check Delivery Date</name>
+      <name>0.2 Controllo Data di Rilascio</name>
       <bounds>
-        <x>450.0</x>
-        <y>300.0</y>
+        <x>541.0</x>
+        <y>175.0</y>
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
@@ -624,11 +624,11 @@
             </point>
           </positions>
           <labelPosition>
-            <x>333.0</x>
-            <y>0.0</y>
+            <x>322.14526520011964</x>
+            <y>-31.8492138012068</y>
           </labelPosition>
         </transition>
-        <transition id="9a4f76e9-3628-4e91-a2d2-61e69ad2794c">
+        <transition id="635a2369-c552-4855-b461-1b1ef8587715">
           <annotation></annotation>
           <name>no action</name>
           <command>NEXT</command>
@@ -637,19 +637,19 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>dd7531fd-4a98-4562-8ccb-f79d71c46933</refId>
+            <refId>48af1f3c-b28b-4a01-a373-d232f4bdaadc</refId>
           </destination>
           <source>
             <refId>706c4c6d-a6b8-4d6c-ac90-772c237d481e</refId>
           </source>
           <positions>
             <point>
-              <x>500.0</x>
-              <y>364.0</y>
+              <x>499.0</x>
+              <y>459.0</y>
             </point>
             <point>
-              <x>860.0</x>
-              <y>334.0</y>
+              <x>79.0</x>
+              <y>159.0</y>
             </point>
           </positions>
           <labelPosition>
@@ -665,12 +665,12 @@
       <assignments/>
       <throttleSize>0</throttleSize>
     </step>
-    <returnStep id="dd7531fd-4a98-4562-8ccb-f79d71c46933">
+    <step id="0cea21f8-33fd-4043-8c0c-bd5ec8c88b63">
       <annotation></annotation>
-      <name>No Action Taken : unknown</name>
+      <name>0.4 Notifica Approvazione Incompleta</name>
       <bounds>
-        <x>810.0</x>
-        <y>300.0</y>
+        <x>360.0</x>
+        <y>0.0</y>
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
@@ -688,27 +688,43 @@
       <userPrompt></userPrompt>
       <bindings/>
       <transitions>
-        <transition id="4369bb62-8c27-410e-abbe-aecb0b6bdbc1">
+        <transition id="4bce051c-5ab2-46cc-9adb-b699100f5915">
           <annotation></annotation>
-          <name>return</name>
+          <name>success</name>
           <command>NEXT</command>
           <linkMode>false</linkMode>
-          <responseSymbol>unknown</responseSymbol>
+          <responseSymbol>success</responseSymbol>
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>dd7531fd-4a98-4562-8ccb-f79d71c46933</refId>
+            <refId>48af1f3c-b28b-4a01-a373-d232f4bdaadc</refId>
           </destination>
           <source>
-            <refId>dd7531fd-4a98-4562-8ccb-f79d71c46933</refId>
+            <refId>0cea21f8-33fd-4043-8c0c-bd5ec8c88b63</refId>
           </source>
-          <positions/>
+          <positions>
+            <point>
+              <x>350.0</x>
+              <y>34.0</y>
+            </point>
+            <point>
+              <x>79.0</x>
+              <y>159.0</y>
+            </point>
+          </positions>
+          <labelPosition>
+            <x>333.0</x>
+            <y>0.0</y>
+          </labelPosition>
         </transition>
       </transitions>
       <properties/>
-      <returnStepType>NO_ACTION_TAKEN</returnStepType>
+      <opRef>
+        <refId>84cf272d-72ec-4369-a858-65789b201543</refId>
+      </opRef>
       <assignments/>
-    </returnStep>
+      <throttleSize>0</throttleSize>
+    </step>
   </steps>
   <startSteps>48af1f3c-b28b-4a01-a373-d232f4bdaadc</startSteps>
 </flow>

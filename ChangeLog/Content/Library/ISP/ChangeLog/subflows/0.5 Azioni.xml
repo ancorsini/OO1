@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<flow id="12f177f1-0df6-4a44-a197-329e91711ff9">
-  <descriptionCdata><![CDATA[12f177f1-0df6-4a44-a197-329e91711ff9.41cbe2b5-1072-4816-8c00-d67333c50e4a.description=<pre>This is an operation that does nothing. It can be used for filtering flow variables by feeding them in as inputs and filtering them on the results tab.\n\nResponses\:\n    success\n    failure\n</pre>
+<flow id="3d005d96-3ca6-431d-94bb-6037098e5b58">
+  <descriptionCdata><![CDATA[3d005d96-3ca6-431d-94bb-6037098e5b58.c5adccd4-0dff-4e71-809c-006fb7ff1629.description=<pre>This is an operation that does nothing. It can be used for filtering flow variables by feeding them in as inputs and filtering them on the results tab.\n\nResponses\:\n    success\n    failure\n</pre>
 ]]></descriptionCdata>
   <annotation></annotation>
-  <name>0.2 Check Delivery Date</name>
+  <name>0.5 Azioni</name>
   <categories/>
   <inputs/>
   <possibleResponses>
-    <opResponse id="63816ffe-4e1c-4b46-8959-17d943f011fd">
+    <opResponse id="d7fc2e2e-f780-4c4a-8612-ddb200845db1">
       <annotation></annotation>
       <name>success</name>
       <isDefault>true</isDefault>
@@ -15,7 +15,7 @@
       <type>RESOLVED</type>
       <matchRules/>
     </opResponse>
-    <opResponse id="dfe1a981-f4a8-41e5-aa3b-aeb810619eda">
+    <opResponse id="612bc661-7780-4b38-b1cf-743688f22387">
       <annotation></annotation>
       <name>failure</name>
       <isDefault>false</isDefault>
@@ -25,14 +25,14 @@
     </opResponse>
   </possibleResponses>
   <availableResultExpressions/>
-  <resultExpression id="1f050114-c7e3-42e6-9e3a-3ea3854bd72c">
+  <resultExpression id="8493810f-9f49-401d-885b-16d3b04813ff">
     <annotation></annotation>
     <name>FailureMessage</name>
     <fieldName>FailureMessage</fieldName>
     <sourceType>RAWRESULT</sourceType>
     <filters/>
   </resultExpression>
-  <iconSpec id="8ae7aeb3-8007-4bea-92dd-437d55e216bf">
+  <iconSpec id="489198fe-d758-4731-9569-cc54775a21cb">
     <baseIcon>flow.png</baseIcon>
     <basePath>System</basePath>
     <readOnly>false</readOnly>
@@ -43,12 +43,12 @@
   <compatibleRuntimeContext>false</compatibleRuntimeContext>
   <historyCheckPointFlow>true</historyCheckPointFlow>
   <steps>
-    <step id="41cbe2b5-1072-4816-8c00-d67333c50e4a">
-      <annotation>12f177f1-0df6-4a44-a197-329e91711ff9.41cbe2b5-1072-4816-8c00-d67333c50e4a.description</annotation>
+    <step id="c5adccd4-0dff-4e71-809c-006fb7ff1629">
+      <annotation>3d005d96-3ca6-431d-94bb-6037098e5b58.c5adccd4-0dff-4e71-809c-006fb7ff1629.description</annotation>
       <name>Do Nothing With Two Responses</name>
       <bounds>
-        <x>0.0</x>
-        <y>30.0</y>
+        <x>36.0</x>
+        <y>0.0</y>
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
@@ -66,7 +66,7 @@
       <userPrompt></userPrompt>
       <bindings/>
       <transitions>
-        <transition id="85a88b62-358e-42a6-995c-f75ba56b1cd0">
+        <transition id="44a6b2a4-0b57-47a3-9f97-f8855c536175">
           <annotation></annotation>
           <name>success</name>
           <command>NEXT</command>
@@ -75,19 +75,19 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>d2b157eb-e729-4433-9ea1-5770149089eb</refId>
+            <refId>52aba7d5-39bc-45a0-929c-85601ed5a110</refId>
           </destination>
           <source>
-            <refId>41cbe2b5-1072-4816-8c00-d67333c50e4a</refId>
+            <refId>c5adccd4-0dff-4e71-809c-006fb7ff1629</refId>
           </source>
           <positions>
             <point>
-              <x>60.0</x>
-              <y>52.0</y>
+              <x>86.0</x>
+              <y>34.0</y>
             </point>
             <point>
-              <x>316.0</x>
-              <y>64.0</y>
+              <x>387.0</x>
+              <y>34.0</y>
             </point>
           </positions>
           <labelPosition>
@@ -95,7 +95,7 @@
             <y>0.0</y>
           </labelPosition>
         </transition>
-        <transition id="b6ad1585-81d2-4b96-966d-89aac214ee3a">
+        <transition id="f8a29670-fa8f-4b62-9599-f48fa3f318cb">
           <annotation></annotation>
           <name>failure</name>
           <command>NEXT</command>
@@ -104,19 +104,19 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>abe4c24b-7ef2-4443-880c-8e7a21052d14</refId>
+            <refId>fa78e047-7c8b-43a3-9c64-c68d6484c35b</refId>
           </destination>
           <source>
-            <refId>41cbe2b5-1072-4816-8c00-d67333c50e4a</refId>
+            <refId>c5adccd4-0dff-4e71-809c-006fb7ff1629</refId>
           </source>
           <positions>
             <point>
-              <x>60.0</x>
-              <y>52.0</y>
+              <x>86.0</x>
+              <y>34.0</y>
             </point>
             <point>
-              <x>57.0</x>
-              <y>261.0</y>
+              <x>389.0</x>
+              <y>275.0</y>
             </point>
           </positions>
           <labelPosition>
@@ -132,12 +132,12 @@
       <assignments/>
       <throttleSize>0</throttleSize>
     </step>
-    <returnStep id="d2b157eb-e729-4433-9ea1-5770149089eb">
+    <returnStep id="52aba7d5-39bc-45a0-929c-85601ed5a110">
       <annotation></annotation>
       <name>Resolved : success</name>
       <bounds>
-        <x>180.0</x>
-        <y>30.0</y>
+        <x>337.0</x>
+        <y>0.0</y>
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
@@ -155,7 +155,7 @@
       <userPrompt></userPrompt>
       <bindings/>
       <transitions>
-        <transition id="5b38efb8-22a8-4321-ae5f-c977adb09691">
+        <transition id="d20d9bea-49de-421b-beb7-d5d3d57847af">
           <annotation></annotation>
           <name>return</name>
           <command>NEXT</command>
@@ -164,10 +164,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>d2b157eb-e729-4433-9ea1-5770149089eb</refId>
+            <refId>52aba7d5-39bc-45a0-929c-85601ed5a110</refId>
           </destination>
           <source>
-            <refId>d2b157eb-e729-4433-9ea1-5770149089eb</refId>
+            <refId>52aba7d5-39bc-45a0-929c-85601ed5a110</refId>
           </source>
           <positions/>
         </transition>
@@ -176,12 +176,12 @@
       <returnStepType>RESOLVED</returnStepType>
       <assignments/>
     </returnStep>
-    <returnStep id="abe4c24b-7ef2-4443-880c-8e7a21052d14">
+    <returnStep id="fa78e047-7c8b-43a3-9c64-c68d6484c35b">
       <annotation></annotation>
       <name>Error : failure</name>
       <bounds>
-        <x>180.0</x>
-        <y>240.0</y>
+        <x>339.0</x>
+        <y>241.0</y>
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
@@ -199,7 +199,7 @@
       <userPrompt></userPrompt>
       <bindings/>
       <transitions>
-        <transition id="46dc0d36-cb92-45d4-a4a9-004bba0b19a9">
+        <transition id="46281819-48c4-43fc-b156-f82a34a0b7cf">
           <annotation></annotation>
           <name>return</name>
           <command>NEXT</command>
@@ -208,10 +208,10 @@
           <shouldHandoff>false</shouldHandoff>
           <transitionValue>0.0</transitionValue>
           <destination>
-            <refId>abe4c24b-7ef2-4443-880c-8e7a21052d14</refId>
+            <refId>fa78e047-7c8b-43a3-9c64-c68d6484c35b</refId>
           </destination>
           <source>
-            <refId>abe4c24b-7ef2-4443-880c-8e7a21052d14</refId>
+            <refId>fa78e047-7c8b-43a3-9c64-c68d6484c35b</refId>
           </source>
           <positions/>
         </transition>
@@ -221,5 +221,5 @@
       <assignments/>
     </returnStep>
   </steps>
-  <startSteps>41cbe2b5-1072-4816-8c00-d67333c50e4a</startSteps>
+  <startSteps>c5adccd4-0dff-4e71-809c-006fb7ff1629</startSteps>
 </flow>
