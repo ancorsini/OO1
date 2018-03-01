@@ -165,8 +165,8 @@
             </point>
           </positions>
           <labelPosition>
-            <x>333.0</x>
-            <y>0.0</y>
+            <x>813.5844527053149</x>
+            <y>-2.571248720716601</y>
           </labelPosition>
         </transition>
       </transitions>
@@ -181,8 +181,8 @@
       <annotation>0dd7a01b-2005-42a3-b05f-3063078f4e80.442acee0-5a9e-43ce-8def-8a6331d06b1a.description</annotation>
       <name>Auto Approvazione?</name>
       <bounds>
-        <x>361.0</x>
-        <y>175.0</y>
+        <x>360.0</x>
+        <y>120.0</y>
       </bounds>
       <layer>-1</layer>
       <hideInbound>false</hideInbound>
@@ -644,12 +644,16 @@
           </source>
           <positions>
             <point>
-              <x>499.0</x>
-              <y>459.0</y>
+              <x>543.0</x>
+              <y>211.1787819253438</y>
             </point>
             <point>
-              <x>79.0</x>
-              <y>159.0</y>
+              <x>390.0</x>
+              <y>240.0</y>
+            </point>
+            <point>
+              <x>80.0</x>
+              <y>230.0</y>
             </point>
           </positions>
           <labelPosition>

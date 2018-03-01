@@ -3,7 +3,7 @@
   <descriptionCdata><![CDATA[12f177f1-0df6-4a44-a197-329e91711ff9.41cbe2b5-1072-4816-8c00-d67333c50e4a.description=<pre>This is an operation that does nothing. It can be used for filtering flow variables by feeding them in as inputs and filtering them on the results tab.\n\nResponses\:\n    success\n    failure\n</pre>
 ]]></descriptionCdata>
   <annotation></annotation>
-  <name>0.2 0.2 Controllo Data di Rilascio</name>
+  <name>0.2 Controllo Data di Rilascio</name>
   <categories/>
   <inputs/>
   <possibleResponses>
